@@ -112,6 +112,22 @@ else:
 	print("The number is not palindrome")
 
 
+# PAL-PRIME
+n = int(input("Enter a number:"))
+r = ""
+for i in str(n):
+	r = i + r
+for i in range(2, n):
+	if n%i==0:
+		print("The number is not pal-prime")
+		break
+else:
+	if n==int(r):
+		print("The number is pal-prime")
+	else:
+		print("The number is not pal-prime")
+
+
 # LENGHT OF STRING
 s = input("Enter a string:")
 print("The string is", len(s), "characters long")
